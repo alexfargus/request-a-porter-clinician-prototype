@@ -74,15 +74,17 @@
 	        </div>
        </div>
        <script>
-       $('#job1-tab').click(function(event){
-		       	$('#job1').show();
-		       	$('#job2').hide();
-       })
-       $('#job2-tab').click(function(event){
-		       	$('#job2').show();
-		       	$('#job1').hide();
-       })       
-       $('#job2').hide();
+       document.addEventListener('deviceready', function(event){
+	       $('#job1-tab').click(function(event){
+			       	$('#job1').show();
+			       	$('#job2').hide();
+	       })
+	       $('#job2-tab').click(function(event){
+			       	$('#job2').show();
+			       	$('#job1').hide();
+	       })       
+	       $('#job2').hide();	
+       }, false);
        </script>       
     </body>
 </html>
