@@ -61,11 +61,3 @@ h1 {
     padding:0px;
     text-align:center;
 }
-
-.map {
-	background-image: url('img/map.png');
-}
-
-.hidden {
-	visibility: false;
-}
