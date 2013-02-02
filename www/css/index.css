@@ -65,3 +65,7 @@ h1 {
 .map {
 	background-image: url('img/map.png');
 }
+
+.hidden {
+	visibility: false;
+}
