@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.2.0.css" />
+        <link rel="stylesheet" type="text/css" href="css/mobiscroll.core-2.4.css" />
+        <link rel="stylesheet" type="text/css" href="css/mobiscroll.jqm-2.4.css" />
+        <link rel="stylesheet" type="text/css" href="css/mobiscroll.animation-2.4.css" />
+        <title>Request-a-Porter (Clinician)</title>
+        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.2.0.js"></script>
+        <script type="text/javascript" src="js/mobiscroll.core-2.4.js"></script>
+        <script type="text/javascript" src="js/mobiscroll.jqm-2.4.js"></script>
+        <script type="text/javascript" src="js/mobiscroll.datetime-2.4.js"></script>
+        <script type="text/javascript" src="js/mobiscroll.list-2.4.js"></script>
+        <script type="text/javascript" src="js/mobiscroll.select-2.4.js"></script>
+    </head>
+    <body>
+    	<div data-role="page" data-theme="b"> 
+	        <div class="app">
+	        	<div data-role="header" data-theme="b">
+	        		<h1>Hillary Babst</h1>
+	        	</div>
+
+				<div data-role="fieldcontain">
+					<label for="scroller">Date and Time:</label>
+					<input type="text" id="scroller" name="scroller" />
+				</div>	
+
+				<div data-role="fieldcontain">
+					<label for="from">From:</label>
+					<input type="text" name="from" id="from"/>
+					<label for="to">To:</label>
+					<input type="text" name="to" id="to"/>
+				</div>	        	
+				
+				<div data-role="fieldcontain">
+					<label for="textarea">Patient Details:</label>
+					<textarea name="textarea" id="textarea"></textarea>
+				</div>
+
+				<div data-role="fieldcontain">
+					<label for="select-choice-a" class="select">Transport method:</label>
+					<select name="select-choice-a" id="select-choice-a" data-native-menu="false" data-mini="true">
+						<option>Choose</option>
+						<option value="walking">Walking</option>
+						<option value="wheelchair">Wheelchair</option>
+						<option value="bed">Bed</option>
+					</select>
+				</div>
+	            <div class="buttons" data-role="controlgroup" data-type="horizontal">
+	            	<a href="#accept_confirmation" data-role="button" data-rel="popup" data-position-to="window">
+	            		Submit
+	            	</a>
+	            	<a href="index.html" data-role="button">
+	            		Cancel
+	            	</a>
+	            	<div id="accept_confirmation" data-role="popup" class='ui-content' data-overlay-theme="b">
+	            		<p>Job request has been submitted.</p>
+	            	</div>
+	            </div>
+	        </div>
+           <script>
+	       document.addEventListener('deviceready', function(){
+		       $("#scroller").mobiscroll().datetime();
+	       }, false);
+	       </script> 
+       </div>
+    </body>
+</html>
