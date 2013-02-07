@@ -48,7 +48,6 @@ body {
 .app {
 /*    position:absolute;             /* position in the center of the screen */
     text-align:center;
-	width:307px;
 	margin-left: auto;
 	margin-right: auto;                                  
 }
