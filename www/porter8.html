@@ -29,62 +29,31 @@
 		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.2.0.js"></script>
     </head>
-    <body>
-    	<div data-role="page" data-theme="b"> 
-	        <div class="app">
-	        	<div data-role="header" data-theme="b">
-	        		<h1>Mathew Ewart</h1>
-	        	</div>
-	            <div class="map">
-					<img src="img/map.png">
-	            </div>
-	            <div data-role="navbar" class="ui-body-c">
-	            	<ul>
-	            		<li><a id="job1-tab" href="#" class="ui-btn-active ui-state-persist">Job 1</a></li>
-	            		<li><a id="job2-tab" href="#">Job 2</a></li>
-	            	</ul>
-	            </div>
-	            <div id="job1" class="job">
-	            	<ul data-role="listview">
-	            		<li>JOB TYPE: Move Equipment</li>
-	            		<li>FROM: MRI</li>
-	            		<li>TO: Ward A</li>
-	            		<li>EQUIPMENT: Wheelchair</li>
-	            	</ul>
-	            </div>
-	            <div id="job2" class="job">
-	            	<ul data-role="listview">
-	            		<li>JOB TYPE: Deliver Records</li>
-	            		<li>FROM: Medical Records</li>
-	            		<li>TO: Ward A</li>
-	            		<li>EQUIPMENT: None</li>
-	            	</ul>
-	            </div>	            
-	            <div class="buttons" data-role="controlgroup" data-type="horizontal">
-	            	<a href="#accept_confirmation" data-role="button" data-rel="popup" data-position-to="window">
-	            		Accept
-	            	</a>
-	            	<a href="index.html" data-role="button">
-	            		Reject
-	            	</a>
-	            	<div id="accept_confirmation" data-role="popup" class='ui-content' data-overlay-theme="b">
-	            		<p>2 Jobs have been accepted.</p>
-	            	</div>
-	            </div>
-	        </div>
-           <script>
-	       document.addEventListener('deviceready', function(){
-		       $('#job1-tab').click(function(event){
-				       	$('#job1').show();
-				       	$('#job2').hide();
-		       })
-		       $('#job2-tab').click(function(event){
-				       	$('#job2').show();
-				       	$('#job1').hide();
-		       })       
-		       $('#job2').hide();	
-	       }, false);
-	       </script> 
-       </div>
+	<body>
+    	<div data-role="page" data-theme="b" id="mc1-1">
+    		<a href="#mc1-2" rel="external">
+    			<img src="img/mc1-1.jpg" width="640" height="960" />
+    		</a>
+       	</div>
+      	<div data-role="page" data-theme="b" id="mc1-2">
+    		<a href="#mc1-3" rel="external">
+    			<img src="img/mc1-2.jpg" width="640" height="960" />
+    		</a>
+       	</div>
+      	<div data-role="page" data-theme="b" id="mc1-3">
+    		<a href="#mc1-4" rel="external">
+    			<img src="img/mc1-3.jpg" width="640" height="960" />
+    		</a>
+       	</div>
+      	<div data-role="page" data-theme="b" id="mc1-4">
+    		<a href="#mc1-5" rel="external">
+    			<img src="img/mc1-4.jpg" width="640" height="960" />
+    		</a>
+       	</div>
+       	<div data-role="page" data-theme="b" id="mc1-5">
+    		<a href="index.html">
+    			<img src="img/mc1-5.jpg" width="640" height="960" />
+    		</a>
+       	</div>
     </body>
 </html>
